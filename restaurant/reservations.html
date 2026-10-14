@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations — SELFWISE CAFE</title>
+  <meta name="description" content="Reserve an intimate dining and roastery experience at Selfwise Cafe. Real-time table booking in Mayfair.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" id="header-brand-logo">
+        <span class="brand-title">SELFWISE CAFE</span>
+        <span class="brand-subtitle">ARTISANAL GASTRONOMIE & ROASTERY</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">The Menu</a>
+        <a href="story.html" class="nav-link">Our Story</a>
+        <a href="reservations.html" class="nav-link active">Reservations</a>
+        <a href="contact.html" class="nav-link">Private Dining & Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-reserve-nav" data-open-reserve-modal id="nav-reserve-btn">Reserve a Table</button>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">01 / Home</a>
+      <a href="menu.html" class="mobile-nav-link">02 / The Menu</a>
+      <a href="story.html" class="mobile-nav-link">03 / Our Story</a>
+      <a href="reservations.html" class="mobile-nav-link active">04 / Reservations</a>
+      <a href="contact.html" class="mobile-nav-link">05 / Private Dining & Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-gold); margin-bottom: 0.5rem; font-weight: 700;">CONCIERGE & BOOKINGS</p>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">+91 22 6946 0912 · reservations@selfwisecafe.com</p>
+      <button class="btn btn-primary" style="width: 100%;" data-open-reserve-modal>Reserve Table</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container page-header-content">
+        <span class="eyebrow">Table Concierge · Direct Reservation</span>
+        <h1 class="page-header-title">Reserve Your Evening</h1>
+        <p class="page-header-desc">
+          We welcome reservations up to 60 days in advance. To maintain the tranquility of service, seating is strictly staggered across the evening.
+        </p>
+      </div>
+    </section>
+
+    <!-- Reservation Engine Wizard -->
+    <section class="section">
+      <div class="container">
+        <div class="reservation-layout">
+          
+          <!-- Booking Form -->
+          <div class="booking-wizard-card">
+            
+            <div class="wizard-steps-indicator">
+              <div class="step-indicator-item completed">
+                <span class="step-circle">✓</span>
+                <span>Experience</span>
+              </div>
+              <div class="step-indicator-item active">
+                <span class="step-circle">2</span>
+                <span>Date & Time</span>
+              </div>
+              <div class="step-indicator-item">
+                <span class="step-circle">3</span>
+                <span>Guest Details</span>
+              </div>
+            </div>
+
+            <form id="reservation-wizard">
+              
+              <!-- 1. Party Size -->
+              <div class="form-group-block">
+                <label class="form-label">1. Select Party Size</label>
+                <div class="guest-picker-grid">
+                  <button type="button" class="guest-btn" data-guests="1">1</button>
+                  <button type="button" class="guest-btn active" data-guests="2">2</button>
+                  <button type="button" class="guest-btn" data-guests="3">3</button>
+                  <button type="button" class="guest-btn" data-guests="4">4</button>
+                  <button type="button" class="guest-btn" data-guests="6">6</button>
+                  <button type="button" class="guest-btn" data-guests="8">8</button>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">
+                  For private parties larger than 8 guests, please review our <a href="contact.html" style="color: var(--accent-gold); text-decoration: underline;">Private Dining Salons</a>.
+                </p>
+              </div>
+
+              <!-- 2. Dining Experience -->
+              <div class="form-group-block">
+                <label class="form-label">2. Choose Your Culinary Experience</label>
+                <div class="experience-options-grid">
+                  <div class="experience-card-option active" data-name="The Grand Tasting Menu" data-price="4800">
+                    <h4 class="exp-title">The Grand Tasting</h4>
+                    <div class="exp-price">₹4,800 / Guest</div>
+                    <p class="exp-desc">10-course progression exploring micro-seasonality and coastal terroir.</p>
+                  </div>
+
+                  <div class="experience-card-option" data-name="Chef's Counter Experience" data-price="5800">
+                    <h4 class="exp-title">Chef's Counter Seating</h4>
+                    <div class="exp-price">₹5,800 / Guest</div>
+                    <p class="exp-desc">Front-row view of the brigade, including two rare cellar pourings.</p>
+                  </div>
+
+                  <div class="experience-card-option" data-name="The A La Carte Evening" data-price="2400">
+                    <h4 class="exp-title">A La Carte Evening</h4>
+                    <div class="exp-price">₹2,400 / Guest min</div>
+                    <p class="exp-desc">4 courses chosen freely from our seasonal repertoire.</p>
+                  </div>
+
+                  <div class="experience-card-option" data-name="Lunch Ephemeral Journey" data-price="1850">
+                    <h4 class="exp-title">Lunch Ephemeral</h4>
+                    <div class="exp-price">₹1,850 / Guest</div>
+                    <p class="exp-desc">5-course daylight service tailored for midday dining.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Date & Area -->
+              <div class="form-group-block">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+                  <div>
+                    <label class="form-label" for="res-date-input">3. Reservation Date</label>
+                    <input type="date" id="res-date-input" class="input-field" required>
+                  </div>
+                  <div>
+                    <label class="form-label" for="dining-area-select">Dining Space</label>
+                    <select id="dining-area-select" class="input-field">
+                      <option value="Main Dining Room">Main Dining Room</option>
+                      <option value="Chef Counter">Open Kitchen Counter</option>
+                      <option value="Garden Solarium">The Garden Solarium</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Seating Time -->
+              <div class="form-group-block">
+                <label class="form-label">4. Available Seating Times</label>
+                <div class="time-slots-grid">
+                  <button type="button" class="time-slot-btn" data-time="17:30">17:30</button>
+                  <button type="button" class="time-slot-btn" data-time="18:15">18:15</button>
+                  <button type="button" class="time-slot-btn active" data-time="19:30">19:30</button>
+                  <button type="button" class="time-slot-btn" data-time="20:15">20:15</button>
+                  <button type="button" class="time-slot-btn" data-time="21:00">21:00</button>
+                  <button type="button" class="time-slot-btn" data-time="21:30" disabled>21:30 (Full)</button>
+                </div>
+              </div>
+
+              <!-- 5. Wine Pairing Option -->
+              <div class="form-group-block" style="padding: 1.25rem; background-color: var(--bg-tertiary); border: 1px solid var(--border-subtle);">
+                <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                  <input type="checkbox" id="wine-pairing-checkbox" style="width: 18px; height: 18px; accent-color: var(--accent-gold);">
+                  <span style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+                    Include Sommelier Grand Cru Wine Pairing (+₹2,200 per guest)
+                  </span>
+                </label>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.35rem; margin-left: 2rem;">
+                  A five-glass progression of rare biodynamic vintages harmonized with each course.
+                </p>
+              </div>
+
+              <!-- 6. Guest Details -->
+              <div class="form-group-block">
+                <label class="form-label">5. Guest Contact Information</label>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                  <div>
+                    <input type="text" id="guest-name" placeholder="Full Name *" class="input-field" required>
+                  </div>
+                  <div>
+                    <input type="email" id="guest-email" placeholder="Email Address *" class="input-field" required>
+                  </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                  <div>
+                    <input type="tel" id="guest-phone" placeholder="Telephone / Mobile *" class="input-field" required value="+44 20 7946 0912">
+                  </div>
+                  <div>
+                    <select id="guest-occasion" class="input-field">
+                      <option value="None">Special Occasion (Optional)</option>
+                      <option value="Anniversary">Anniversary</option>
+                      <option value="Birthday">Birthday Celebration</option>
+                      <option value="Business">Executive Entertaining</option>
+                      <option value="Other">Other Milestone</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <textarea id="guest-notes" placeholder="Dietary restrictions, allergies, or special physical accommodations..." class="input-field" rows="3"></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.1rem;" id="submit-booking-wizard-btn">
+                Complete Table Reservation
+              </button>
+            </form>
+
+          </div>
+
+          <!-- Live Folio Sidebar -->
+          <aside class="booking-summary-sidebar">
+            <h3 class="summary-title">Booking Folio</h3>
+
+            <div class="summary-row">
+              <span class="summary-row-label">Guests</span>
+              <span class="summary-row-val" id="sum-guests">2 Guests</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-row-label">Experience</span>
+              <span class="summary-row-val" id="sum-experience">The Grand Tasting Menu</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-row-label">Date</span>
+              <span class="summary-row-val" id="sum-date">2026-10-15</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-row-label">Seating</span>
+              <span class="summary-row-val" id="sum-time">19:30 (Dinner)</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-row-label">Dining Area</span>
+              <span class="summary-row-val" id="sum-area">Main Dining Room</span>
+            </div>
+
+            <div class="summary-row-total">
+              <div>
+                <span class="summary-row-label">Estimated Total</span>
+                <p style="font-size: 0.72rem; color: var(--text-muted);">Excluding discretionary 12.5% service</p>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 1.6rem; color: var(--accent-gold); font-weight: 700;" id="sum-total">
+                ₹9,600
+              </div>
+            </div>
+
+            <div class="policy-card">
+              <h5>Reservation Policy</h5>
+              <p style="margin-bottom: 0.75rem;">
+                <strong>Cancellation:</strong> Modifications or cancellations must be made 48 hours prior to service to avoid a ₹1,500 per guest deposit charge.
+              </p>
+              <p style="margin-bottom: 0.75rem;">
+                <strong>Dress Code:</strong> Elegant smart casual. We respectfully request gentlemen avoid athletic sportswear and beachwear.
+              </p>
+              <p>
+                <strong>Children:</strong> Due to the quiet nature of our tasting journey, we welcome guests aged 10 and older.
+              </p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reservation Confirmation Modal -->
+  <div class="modal-backdrop" id="booking-confirmed-modal">
+    <div class="modal-container" style="max-width: 580px;">
+      <button class="modal-close-btn" id="close-conf-modal" aria-label="Close modal">×</button>
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <span class="badge" style="margin-bottom: 1rem;">Reservation Confirmed</span>
+        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">We Await Your Presence</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          A formal reservation dossier has been dispatched to your email.
+        </p>
+      </div>
+
+      <div style="background-color: var(--bg-tertiary); border: 1px solid var(--border-subtle); padding: 1.5rem; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Reference Code</span>
+          <span style="font-family: var(--font-mono); font-size: 0.95rem; color: var(--accent-gold); font-weight: 700;" id="conf-ref-code">#SELFWISE-2026-84910</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Lead Guest</span>
+          <span style="font-size: 0.95rem; color: var(--text-primary); font-weight: 700;" id="conf-guest-name">Julian Mercier</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Arrangement</span>
+          <span style="font-size: 0.95rem; color: var(--text-primary);" id="conf-details">2 Guests · 2026-10-15 · 19:30</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Experience</span>
+          <span style="font-size: 0.95rem; color: var(--text-primary);" id="conf-exp">The Grand Tasting Menu</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Estimated Folio</span>
+          <span style="font-family: var(--font-mono); font-size: 1.1rem; color: var(--accent-gold); font-weight: 700;" id="conf-total">₹9,600</span>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 1rem;">
+        <button class="btn btn-outline" style="flex: 1;" onclick="window.print()">Print Dossier</button>
+        <button class="btn btn-primary" style="flex: 1;" id="done-conf-btn" onclick="document.getElementById('booking-confirmed-modal').classList.remove('open'); document.body.style.overflow=''">Return to Website</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Universal Quick Reservation Modal -->
+  <div class="modal-backdrop" id="global-reserve-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-global-modal" aria-label="Close modal">×</button>
+      <span class="eyebrow">Priority Booking</span>
+      <h3 style="margin-bottom: 0.5rem;">Reserve Your Table at L'ÉCRIN</h3>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 2rem;">
+        Instant table availability for up to 8 guests.
+      </p>
+
+      <form id="quick-reserve-form">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <label class="form-label">Party Size</label>
+            <select name="quick-guests" class="input-field" required>
+              <option value="2" selected>2 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="8">8 Guests</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Date</label>
+            <input type="date" name="quick-date" class="input-field" required value="2026-10-15">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <label class="form-label">Seating Time</label>
+            <select name="quick-time" class="input-field" required>
+              <option value="17:30">17:30</option>
+              <option value="19:30" selected>19:30</option>
+              <option value="20:45">20:45</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Seating Preference</label>
+            <select name="quick-area" class="input-field">
+              <option value="Main Dining Room">Main Dining Room</option>
+              <option value="Chef Counter">Open Kitchen Counter</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <label class="form-label">Primary Guest Full Name</label>
+          <input type="text" name="quick-name" placeholder="Full Name" class="input-field" required>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <label class="form-label">Email for Confirmation</label>
+          <input type="email" name="quick-email" placeholder="name@domain.com" class="input-field" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <span class="brand-title" style="font-size: 1.4rem;">SELFWISE CAFE</span>
+          <p class="footer-brand-desc">
+            A minimalist sanctuary of artisanal roastery and modern gastronomie. Rooted in seasonal harmony and silent culinary mastery.
+          </p>
+          <span class="badge">Artisanal Distinction</span>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="menu.html" class="footer-link">The Menu</a></li>
+            <li><a href="story.html" class="footer-link">Our Story & Ethos</a></li>
+            <li><a href="reservations.html" class="footer-link">Table Reservations</a></li>
+            <li><a href="contact.html" class="footer-link">Private Dining & Salon</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Service Hours</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link"><strong>Tuesday – Saturday</strong></li>
+            <li class="footer-link">Lunch: 12:00 – 14:30</li>
+            <li class="footer-link">Dinner: 17:30 – 23:00</li>
+            <li class="footer-link" style="color: var(--text-muted); margin-top: 0.5rem;">Sunday & Monday: Closed</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Private Journal</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Receive seasonal menu announcements and priority access to cellar releases.
+          </p>
+          <form class="newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Your email address" class="newsletter-input" required>
+              <button type="submit" class="newsletter-btn">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 SELFWISE CAFE. ALL RIGHTS RESERVED.</div>
+        <div>14 ALBEMARLE STREET, MAYFAIR · TEL: +91 22 6946 0912</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

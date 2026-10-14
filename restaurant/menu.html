@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Menu — SELFWISE CAFE</title>
+  <meta name="description" content="Explore the seasonal tasting menus, artisanal roastery, and rare cellar pairings at Selfwise Cafe.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" id="header-brand-logo">
+        <span class="brand-title">SELFWISE CAFE</span>
+        <span class="brand-subtitle">ARTISANAL GASTRONOMIE & ROASTERY</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">The Menu</a>
+        <a href="story.html" class="nav-link">Our Story</a>
+        <a href="reservations.html" class="nav-link">Reservations</a>
+        <a href="contact.html" class="nav-link">Private Dining & Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-reserve-nav" data-open-reserve-modal id="nav-reserve-btn">Reserve a Table</button>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">01 / Home</a>
+      <a href="menu.html" class="mobile-nav-link active">02 / The Menu</a>
+      <a href="story.html" class="mobile-nav-link">03 / Our Story</a>
+      <a href="reservations.html" class="mobile-nav-link">04 / Reservations</a>
+      <a href="contact.html" class="mobile-nav-link">05 / Private Dining & Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-gold); margin-bottom: 0.5rem; font-weight: 700;">CONCIERGE & BOOKINGS</p>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">+91 22 6946 0912 · reservations@selfwisecafe.com</p>
+      <button class="btn btn-primary" style="width: 100%;" data-open-reserve-modal>Reserve Table</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container page-header-content">
+        <span class="eyebrow">Winter Equinox Menu · 2026</span>
+        <h1 class="page-header-title">The Culinary Repertoire</h1>
+        <p class="page-header-desc">
+          Crafted daily according to morning deliveries from our trusted fishermen, organic foragers, and biodynamic estates across Western Europe.
+        </p>
+        <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 1rem;">
+          <button class="btn btn-outline" id="download-menu-btn">Download Tasting Folio (PDF)</button>
+          <a href="reservations.html" class="btn btn-primary">Book This Experience</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+      <div class="container">
+        
+        <!-- Controls: Category Tabs & Dietary Filter -->
+        <div class="menu-controls">
+          <div class="menu-category-tabs">
+            <button class="menu-tab-btn active" data-category="all">All Courses</button>
+            <button class="menu-tab-btn" data-category="starters">Starters & Raw Bar</button>
+            <button class="menu-tab-btn" data-category="mains">The Hearth & Mains</button>
+            <button class="menu-tab-btn" data-category="tasting">Tasting Journey</button>
+            <button class="menu-tab-btn" data-category="dessert">Dessert & Pâtisserie</button>
+            <button class="menu-tab-btn" data-category="cellar">Cellar & Pairings</button>
+          </div>
+
+          <div class="dietary-filters">
+            <span>Filter Dietary:</span>
+            <button class="dietary-chip active" data-filter="all">All Items</button>
+            <button class="dietary-chip" data-filter="GF">Gluten-Free (GF)</button>
+            <button class="dietary-chip" data-filter="V">Vegetarian (V)</button>
+            <button class="dietary-chip" data-filter="DF">Dairy-Free (DF)</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Menu Items Grid -->
+        <div class="menu-items-grid" id="main-menu-grid">
+          <!-- Populated by JavaScript and fallback structured elements -->
+        </div>
+
+        <!-- Featured Tasting Menu Deep Dive Banner -->
+        <div class="tasting-journey-card">
+          <div>
+            <span class="eyebrow">The Signature Experience</span>
+            <h2 style="margin-bottom: 0.75rem;">The Obsidian Tasting Journey</h2>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+              A curated ten-course sensory narrative orchestrated by Chef Julian Mercier. Each course is paced to celebrate micro-seasons and rare coastal flora.
+            </p>
+
+            <div class="tasting-courses-list">
+              <div class="tasting-course-row">
+                <span class="tasting-course-name">Oscietra Caviar, Smoked Dashi & Kohlrabi Disc</span>
+                <span class="tasting-course-num">Course 01</span>
+              </div>
+              <div class="tasting-course-row">
+                <span class="tasting-course-name">Hand-Dived Brittany Scallop, Périgord Black Truffle</span>
+                <span class="tasting-course-num">Course 03</span>
+              </div>
+              <div class="tasting-course-row">
+                <span class="tasting-course-name">Line-Caught Breton Turbot, Coastal Sea Botanicals</span>
+                <span class="tasting-course-num">Course 06</span>
+              </div>
+              <div class="tasting-course-row">
+                <span class="tasting-course-name">A5 Miyazaki Wagyu, Pickled Mountain Morels</span>
+                <span class="tasting-course-num">Course 08</span>
+              </div>
+              <div class="tasting-course-row">
+                <span class="tasting-course-name">Smoked Madagascar Noir, Tahitian Vanilla Mist</span>
+                <span class="tasting-course-num">Course 10</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background-color: var(--bg-tertiary); border: 1px solid var(--border-subtle); padding: 2.25rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.15em; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 0.5rem; font-weight: 700;">
+              Service Details
+            </div>
+            <div style="font-family: var(--font-serif); font-size: 2.5rem; color: var(--text-primary); font-weight: 700; margin-bottom: 0.25rem;">
+              ₹4,800
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Per guest · Excludes beverage pairings</p>
+
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-bottom: 1.5rem;">
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                <strong>Grand Cru Wine Pairing:</strong> +₹2,200 per guest
+              </p>
+              <p style="font-size: 0.88rem; color: var(--text-secondary);">
+                <strong>Artisanal Botanical Temperance Pairing:</strong> +₹950 per guest
+              </p>
+            </div>
+
+            <a href="reservations.html" class="btn btn-primary" style="width: 100%;">Reserve This Journey</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Visual Dessert Craft Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="chef-statement-block">
+          <div class="chef-statement-image">
+            <img src="assets/images/dessert.jpg" alt="Minimalist fine dining dessert with dark chocolate quenelle and wafer">
+          </div>
+          <div>
+            <span class="eyebrow">The Sweet Finalé</span>
+            <h2>Desserts of Restraint & Texture</h2>
+            <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">
+              Our pastry atelier strips away unnecessary sugars, relying instead on natural orchard pectins, roasted wild grains, and smoked single-estate cacao from Madagascar to create lingering, contemplative finishes.
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem;">
+              Pastry Chef Claire Delacroix incorporates seasonal mountain herbal infusions and fermented honey from our private hives in Sussex.
+            </p>
+            <a href="reservations.html" class="btn btn-outline">Experience In Person →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dish Detail Modal -->
+  <div class="modal-backdrop" id="dish-detail-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-dish-modal" aria-label="Close dish modal">×</button>
+      <span class="eyebrow" id="modal-dish-category">Course Dossier</span>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem;">
+        <h3 id="modal-dish-title" style="font-size: 1.6rem;">Dish Name</h3>
+        <span id="modal-dish-price" style="font-family: var(--font-mono); font-size: 1.3rem; color: var(--accent-gold);">$0</span>
+      </div>
+
+      <p id="modal-dish-desc" style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 1.75rem; line-height: 1.6;">
+        Dish description goes here.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2rem;">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-gold); display: block; margin-bottom: 0.25rem;">Ingredient Provenance</span>
+          <p id="modal-dish-origin" style="font-size: 0.9rem; color: var(--text-secondary);"></p>
+        </div>
+
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-gold); display: block; margin-bottom: 0.25rem;">Sommelier Cellar Pairing</span>
+          <p id="modal-dish-pairing" style="font-size: 0.9rem; color: var(--text-secondary);"></p>
+        </div>
+
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-gold); display: block; margin-bottom: 0.25rem;">Allergen Disclosure</span>
+          <p id="modal-dish-allergens" style="font-size: 0.9rem; color: var(--text-muted);"></p>
+        </div>
+      </div>
+
+      <a href="reservations.html" class="btn btn-primary" style="width: 100%;">Reserve Table For This Course</a>
+    </div>
+  </div>
+
+  <!-- Universal Quick Reservation Modal -->
+  <div class="modal-backdrop" id="global-reserve-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-global-modal" aria-label="Close modal">×</button>
+      <span class="eyebrow">Priority Booking</span>
+      <h3 style="margin-bottom: 0.5rem;">Reserve Your Table at L'ÉCRIN</h3>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 2rem;">
+        Instant table availability for up to 8 guests.
+      </p>
+
+      <form id="quick-reserve-form">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <label class="form-label">Party Size</label>
+            <select name="quick-guests" class="input-field" required>
+              <option value="2" selected>2 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="8">8 Guests</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Date</label>
+            <input type="date" name="quick-date" class="input-field" required value="2026-10-15">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <label class="form-label">Seating Time</label>
+            <select name="quick-time" class="input-field" required>
+              <option value="17:30">17:30</option>
+              <option value="19:30" selected>19:30</option>
+              <option value="20:45">20:45</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Seating Preference</label>
+            <select name="quick-area" class="input-field">
+              <option value="Main Dining Room">Main Dining Room</option>
+              <option value="Chef Counter">Open Kitchen Counter</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <label class="form-label">Primary Guest Full Name</label>
+          <input type="text" name="quick-name" placeholder="Full Name" class="input-field" required>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <label class="form-label">Email for Confirmation</label>
+          <input type="email" name="quick-email" placeholder="name@domain.com" class="input-field" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <span class="brand-title" style="font-size: 1.4rem;">SELFWISE CAFE</span>
+          <p class="footer-brand-desc">
+            A minimalist sanctuary of artisanal roastery and modern gastronomie. Rooted in seasonal harmony and silent culinary mastery.
+          </p>
+          <span class="badge">Artisanal Distinction</span>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="menu.html" class="footer-link">The Menu</a></li>
+            <li><a href="story.html" class="footer-link">Our Story & Ethos</a></li>
+            <li><a href="reservations.html" class="footer-link">Table Reservations</a></li>
+            <li><a href="contact.html" class="footer-link">Private Dining & Salon</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Service Hours</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link"><strong>Tuesday – Saturday</strong></li>
+            <li class="footer-link">Lunch: 12:00 – 14:30</li>
+            <li class="footer-link">Dinner: 17:30 – 23:00</li>
+            <li class="footer-link" style="color: var(--text-muted); margin-top: 0.5rem;">Sunday & Monday: Closed</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Private Journal</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Receive seasonal menu announcements and priority access to cellar releases.
+          </p>
+          <form class="newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Your email address" class="newsletter-input" required>
+              <button type="submit" class="newsletter-btn">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 SELFWISE CAFE. ALL RIGHTS RESERVED.</div>
+        <div>14 ALBEMARLE STREET, MAYFAIR · TEL: +91 22 6946 0912</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

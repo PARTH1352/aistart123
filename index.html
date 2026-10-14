@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS APEX | High-Performance Running Shoes & Weatherproof Backpacks</title>
+  <meta name="description" content="Discover advanced running shoes engineered with carbon propulsion plates and military-grade weatherproof backpacks built for modern explorers. Elevate your everyday performance." />
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       ANNOUNCEMENT BANNER TICKER (GRADIENT GLOW)
+       ========================================================================= -->
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      <span class="announcement-badge">FLASH SALE</span>
+      <span>🚀 FREE EXPRESS WORLDWIDE SHIPPING ON ORDERS OVER $75 • USE CODE <strong>ELEVATE20</strong> FOR 20% OFF</span>
+      <span class="announcement-badge">30-DAY TRIAL</span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="NEXUS APEX Home">
+        <div class="logo-icon">▲</div>
+        <span class="brand-text">NEXUS<span style="font-weight: 300;">APEX</span></span>
+        <span class="brand-badge">PRO</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#shopping-lists" class="nav-link">Shopify Lists</a></li>
+          <li><a href="#products" class="nav-link">Running Shoes</a></li>
+          <li><a href="#products" class="nav-link">Backpacks</a></li>
+          <li><a href="#why-shop" class="nav-link">Why Shop With Us</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="header-actions">
+        <!-- Live Instant Search -->
+        <div class="search-wrapper">
+          <span class="search-icon-btn">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search shoes, bags..." aria-label="Search Catalog" />
+        </div>
+
+        <!-- Shopping List Drawer Trigger (Like Shopify Wishlist/Lists) -->
+        <button id="listTrigger" class="action-btn" title="Saved Shopping Lists" aria-label="Shopping Lists">
+          <span>📋</span>
+          <span id="listBadgeCount" class="btn-badge">2</span>
+        </button>
+
+        <!-- Cart Drawer Trigger -->
+        <button id="cartTrigger" class="action-btn cart-btn" title="Shopping Bag" aria-label="Shopping Bag">
+          <span>🛍️</span>
+          <span id="cartBadgeCount" class="btn-badge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         HERO SECTION: GRADIENT GLOW & SHOWCASE
+         ======================================================================= -->
+    <section class="hero-section" id="home">
+      <div class="hero-glow-blob hero-glow-1"></div>
+      <div class="hero-glow-blob hero-glow-2"></div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span></span> NEW CARBON STRATA GENERATION • 2026 RELEASE
+          </div>
+          <h1 class="hero-title">
+            Engineered for <span class="gradient-text">Pure Speed</span> &amp; <span class="gradient-text-cyan">Endurance.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Next-gen running shoes with supercritical carbon plate propulsion, paired with waterproof ballistic travel backpacks. Handcrafted for marathoners, explorers, and modern urban commuters.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#products" class="btn-primary">
+              <span>Explore Gear</span> <span>→</span>
+            </a>
+            <a href="#shopping-lists" class="btn-secondary">
+              <span>View Shopify Lists</span> <span>📋</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>198g</h4>
+              <p>Featherweight Carbon Shoe</p>
+            </div>
+            <div class="stat-item">
+              <h4>IPX6</h4>
+              <p>Weatherproof Submersible Pack</p>
+            </div>
+            <div class="stat-item">
+              <h4>4.9 ★</h4>
+              <p>1,480+ Verified Athletes</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Product Showcase Card -->
+        <div class="hero-showcase">
+          <div class="hero-card">
+            <span class="hero-card-tag">🔥 FLAGSHIP RUNNER</span>
+            <div class="hero-card-img-wrap">
+              <img src="assets/images/running_shoes_ai.jpg" alt="Velocity Carbon Pro Runner" />
+            </div>
+            <div class="hero-card-details">
+              <div>
+                <span class="hero-card-category">Marathon Propulsion Series</span>
+                <h3 class="hero-card-title">Velocity Carbon Pro Runner</h3>
+                <div class="stars" style="font-size:0.85rem; margin-top: 2px;">★★★★★ (342 reviews)</div>
+              </div>
+              <div style="text-align: right;">
+                <div class="hero-card-price">$189.99</div>
+                <button class="btn-primary" style="padding: 0.5rem 1.1rem; font-size: 0.85rem; margin-top: 6px;" onclick="addToCart('run-01')">
+                  + Add to Bag
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SHOPIFY-STYLE SHOPPING LISTS / CURATED ESSENTIALS SPOTLIGHT
+         ======================================================================= -->
+    <section class="shopping-list-spotlight" id="shopping-lists">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Curated Lists</span>
+          <h2 class="section-title">Shopify-Style <span class="gradient-text">Shopping Lists</span></h2>
+          <p class="section-subtitle">
+            Organize gear into custom shopping lists. Save complete kits for marathon race days, alpine expeditions, or daily urban commutes with single-click bulk bag checkout.
+          </p>
+        </div>
+
+        <div class="lists-grid" id="shoppingListsSpotlightGrid">
+          <!-- Dynamic Shopping Lists Injected via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CATALOG SECTION: RUNNING SHOES & BACKPACKS
+         ======================================================================= -->
+    <section class="catalog-section" id="products">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Product Catalog</span>
+          <h2 class="section-title">Performance Running Shoes &amp; <span class="gradient-text-cyan">Modular Packs</span></h2>
+          <p class="section-subtitle">
+            Scientifically balanced weight distribution, weather-sealed compartments, and biomechanically tested cushioning.
+          </p>
+        </div>
+
+        <!-- Filter & Sorting Bar -->
+        <div class="filter-bar">
+          <div class="category-pills">
+            <button class="pill-btn active" data-category="all">All Products</button>
+            <button class="pill-btn" data-category="shoes">👟 Running Shoes</button>
+            <button class="pill-btn" data-category="backpacks">🎒 Backpacks</button>
+            <button class="pill-btn" data-category="gear">⚡ Performance Tech</button>
+          </div>
+
+          <div class="catalog-controls">
+            <span class="product-count-label" id="productCountLabel">Showing products</span>
+            <select class="sort-select" id="sortSelect" aria-label="Sort Catalog">
+              <option value="featured">Featured Picks</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Dynamically populated via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         WHY WE NEED IT / WHY SHOP WITH US SECTION
+         ======================================================================= -->
+    <section class="why-shop-section" id="why-shop">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Engineered Advantage</span>
+          <h2 class="section-title">Why You Need <span class="gradient-text">NEXUS Gear</span></h2>
+          <p class="section-subtitle">
+            We reject fragile fast fashion. Every stitch, sole, and buckle is stress-tested to endure hundreds of kilometers under extreme humidity, torrential rain, and grueling elevation gains.
+          </p>
+        </div>
+
+        <div class="why-grid" id="whyShopGrid">
+          <!-- Injected via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CUSTOMER REVIEWS & SOCIAL PROOF SECTION
+         ======================================================================= -->
+    <section class="reviews-section" id="reviews">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Verified Social Proof</span>
+          <h2 class="section-title">Real Feedback from <span class="gradient-text">Everyday Athletes</span></h2>
+          <p class="section-subtitle">
+            Join thousands of marathon runners, mountain trail hikers, and city commuters who depend on NEXUS gear.
+          </p>
+        </div>
+
+        <!-- Reviews Analytics Breakdown Bar -->
+        <div class="reviews-summary-bar">
+          <div class="score-box">
+            <div class="score-num">4.9</div>
+            <div class="score-stars">★★★★★</div>
+            <div class="score-total">Based on 1,480+ Verified Purchases</div>
+          </div>
+
+          <div class="breakdown-bars">
+            <div class="breakdown-row">
+              <span>5 Star</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 88%;"></div></div>
+              <span>88%</span>
+            </div>
+            <div class="breakdown-row">
+              <span>4 Star</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 9%;"></div></div>
+              <span>9%</span>
+            </div>
+            <div class="breakdown-row">
+              <span>3 Star</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 2%;"></div></div>
+              <span>2%</span>
+            </div>
+            <div class="breakdown-row">
+              <span>2 Star</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 1%;"></div></div>
+              <span>1%</span>
+            </div>
+          </div>
+
+          <div class="write-review-cta">
+            <h4>Own NEXUS Gear?</h4>
+            <p>Tell the community about your endurance experience.</p>
+            <button class="btn-secondary" id="openReviewModalBtn">
+              Write a Review ✍️
+            </button>
+          </div>
+        </div>
+
+        <!-- Customer Reviews Cards -->
+        <div class="reviews-grid" id="reviewsGrid">
+          <!-- Injected via js/app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER WITH COMPLETE COPYRIGHTS RESERVED INFORMATION
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-grid">
+        <!-- Brand Info Column -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-icon">▲</div>
+            <span class="brand-text">NEXUS<span style="font-weight: 300;">APEX</span></span>
+          </div>
+          <p>
+            Precision aerodynamic performance footwear and modular weatherproof backpacks. Developed with world-class runners, ergonomic designers, and environmental materials researchers.
+          </p>
+          <div class="footer-badges-row">
+            <span class="footer-trust-tag">🌱 Carbon Neutral Certified</span>
+            <span class="footer-trust-tag">🛡️ 2-Year Full Gear Warranty</span>
+            <span class="footer-trust-tag">🚀 48h Express Dispatch</span>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="footer-column">
+          <h4>Explore Gear</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Carbon Plate Running Shoes</a></li>
+            <li><a href="#products">Trail & Ultra Marathon Shoes</a></li>
+            <li><a href="#products">IPX6 Waterproof Backpacks</a></li>
+            <li><a href="#products">Tactical Commuter Packs</a></li>
+            <li><a href="#shopping-lists">Shopify Curated Lists</a></li>
+            <li><a href="#why-shop">Kinetic Sole Technology</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care & Assistance -->
+        <div class="footer-column">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="#reviews">Verified Customer Reviews</a></li>
+            <li><a href="#why-shop">30-Day Wear-Test Guarantee</a></li>
+            <li><a href="#siteHeader">Free Shipping Policy ($75+)</a></li>
+            <li><a href="#">Size & Fit Guide Calculator</a></li>
+            <li><a href="#">Track Global Delivery</a></li>
+            <li><a href="#">Returns & Exchanges Portal</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Promo Codes -->
+        <div class="footer-column newsletter-box">
+          <h4>Join The Movement</h4>
+          <p>Receive exclusive member drops, marathon pacing guides, and 20% off your next order.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Enter your email" required />
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+          <p style="font-size: 0.78rem; color: var(--text-dim); margin-top: 0.8rem;">
+            *Instant static response code <strong>ELEVATE20</strong> will be credited to your cart.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyrights Reserved & Legal Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <div class="copyright-text">
+          <p><strong>© 2026 NEXUS COMMERCE INC. ALL RIGHTS RESERVED.</strong></p>
+          <p>All brand logos, proprietary carbon plate designs, aerodynamic shoe contours, and content are protected by international copyright and intellectual property laws. Unauthorized duplication or distribution is strictly prohibited.</p>
+        </div>
+
+        <div class="payment-methods-strip">
+          <span class="pay-badge">Apple Pay</span>
+          <span class="pay-badge">Google Pay</span>
+          <span class="pay-badge">VISA</span>
+          <span class="pay-badge">Mastercard</span>
+          <span class="pay-badge">AMEX</span>
+          <span class="pay-badge">PayPal</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       DRAWERS: CART & SHOPIFY-STYLE SHOPPING LISTS
+       ========================================================================= -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Shopping Bag Drawer -->
+  <aside class="side-drawer" id="cartDrawer" aria-label="Shopping Cart Drawer">
+    <div class="drawer-header">
+      <h3><span>🛍️</span> Your Shopping Bag</h3>
+      <button class="drawer-close-btn" id="cartClose" aria-label="Close Cart">✕</button>
+    </div>
+    <div class="drawer-body" id="cartDrawerBody">
+      <!-- Items dynamically populated -->
+    </div>
+    <div class="drawer-footer">
+      <div class="promo-input-row">
+        <input type="text" id="promoInput" class="promo-input" placeholder="Code: ELEVATE20" />
+        <button id="applyPromoBtn" class="promo-btn">Apply</button>
+      </div>
+      <div class="cost-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="cost-row" id="cartDiscountRow" style="display: none; color: #10b981;">
+        <span>Promo Discount</span>
+        <span id="cartDiscountVal">-$0.00</span>
+      </div>
+      <div class="cost-row">
+        <span>Estimated Express Shipping</span>
+        <span id="cartShipping">FREE</span>
+      </div>
+      <div class="cost-row total-row">
+        <span>Total Due</span>
+        <span id="cartTotal" style="color: #38bdf8;">$0.00</span>
+      </div>
+      <button class="btn-checkout" id="checkoutBtn">
+        Proceed to Checkout 🔒
+      </button>
+    </div>
+  </aside>
+
+  <!-- Shopify-Style Shopping Lists Drawer -->
+  <aside class="side-drawer" id="listDrawer" aria-label="Shopping Lists Drawer">
+    <div class="drawer-header">
+      <h3><span>📋</span> Saved Shopping Lists</h3>
+      <button class="drawer-close-btn" id="listClose" aria-label="Close Lists">✕</button>
+    </div>
+    <div class="drawer-body" id="listDrawerBody">
+      <!-- Lists & Items dynamically populated -->
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       MODAL ENGINE: QUICK VIEW, REVIEWS, SIMULATED CHECKOUT
+       ========================================================================= -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalClose" aria-label="Close Dialog">✕</button>
+      <div id="modalDynamicContainer">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       TOAST NOTIFICATION ENGINE
+       ========================================================================= -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Application Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

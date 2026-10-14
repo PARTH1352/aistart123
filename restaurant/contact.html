@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Private Dining — SELFWISE CAFE</title>
+  <meta name="description" content="Host private celebrations in our salons or connect with the concierge team at Selfwise Cafe.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" id="header-brand-logo">
+        <span class="brand-title">SELFWISE CAFE</span>
+        <span class="brand-subtitle">ARTISANAL GASTRONOMIE & ROASTERY</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">The Menu</a>
+        <a href="story.html" class="nav-link">Our Story</a>
+        <a href="reservations.html" class="nav-link">Reservations</a>
+        <a href="contact.html" class="nav-link active">Private Dining & Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-reserve-nav" data-open-reserve-modal id="nav-reserve-btn">Reserve a Table</button>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">01 / Home</a>
+      <a href="menu.html" class="mobile-nav-link">02 / The Menu</a>
+      <a href="story.html" class="mobile-nav-link">03 / Our Story</a>
+      <a href="reservations.html" class="mobile-nav-link">04 / Reservations</a>
+      <a href="contact.html" class="mobile-nav-link active">05 / Private Dining & Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-gold); margin-bottom: 0.5rem; font-weight: 700;">CONCIERGE & BOOKINGS</p>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">+91 22 6946 0912 · events@selfwisecafe.com</p>
+      <button class="btn btn-primary" style="width: 100%;" data-open-reserve-modal>Reserve Table</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container page-header-content">
+        <span class="eyebrow">Mayfair Salons & Concierge</span>
+        <h1 class="page-header-title">Private Dining & Inquiries</h1>
+        <p class="page-header-desc">
+          Intimate architectural spaces crafted for bespoke celebrations, diplomatic dinners, and collector wine tastings, supported by dedicated service brigades.
+        </p>
+      </div>
+    </section>
+
+    <!-- Private Salons Showcase -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="private-event-showcase" style="margin-bottom: 5rem;">
+          <img src="assets/images/private-event.jpg" alt="Intimate luxury private dining room at L'ÉCRIN overlooking London skyline">
+          <div class="private-event-content">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+              <div>
+                <span class="eyebrow">Exclusive Sanctuary</span>
+                <h2 style="font-size: 2.2rem;">The Obsidian Salon</h2>
+              </div>
+              <span class="badge">Capacity: Up to 16 Seated</span>
+            </div>
+            
+            <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 1.75rem; max-width: 860px;">
+              Overlooking the Mayfair skyline through acoustic soundproof glass, The Obsidian Salon features a monolithic bog oak banquet table, private cloakroom, discrete subterranean entrance, and dedicated sommelier. Bespoke multi-course tasting menus are designed directly with Chef Julian Mercier.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding: 1.5rem 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); margin-bottom: 2rem;">
+              <div>
+                <p style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-gold); text-transform: uppercase;">Acoustic Privacy</p>
+                <p style="color: var(--text-primary); font-size: 0.95rem;">Sound-Isolated Stone Enclosure</p>
+              </div>
+              <div>
+                <p style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-gold); text-transform: uppercase;">Culinary Service</p>
+                <p style="color: var(--text-primary); font-size: 0.95rem;">Private Dedicated Brigade & Captain</p>
+              </div>
+              <div>
+                <p style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-gold); text-transform: uppercase;">Curated Cellar</p>
+                <p style="color: var(--text-primary); font-size: 0.95rem;">Rare Vintages from 1982–2020</p>
+              </div>
+            </div>
+
+            <a href="#event-inquiry-section" class="btn btn-primary">Request Salon Availability</a>
+          </div>
+        </div>
+
+        <!-- Contact & Inquiry Split -->
+        <div class="contact-grid" id="event-inquiry-section">
+          
+          <!-- Event Inquiry Form -->
+          <div class="contact-card-box">
+            <span class="eyebrow">Private Dining Concierge</span>
+            <h3 style="margin-bottom: 0.75rem;">Request Salon Booking</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 2rem;">
+              Please provide the preliminary parameters of your engagement. Our Private Dining Director will respond within 24 hours.
+            </p>
+
+            <form id="event-inquiry-form">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+                <div>
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" name="client-name" placeholder="Lord / Lady / Dr / Mr / Ms" class="input-field" required>
+                </div>
+                <div>
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" name="client-email" placeholder="name@domain.com" class="input-field" required>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+                <div>
+                  <label class="form-label">Contact Telephone *</label>
+                  <input type="tel" name="client-phone" placeholder="+44 20 7000 0000" class="input-field" required>
+                </div>
+                <div>
+                  <label class="form-label">Engagement Type *</label>
+                  <select name="event-type" class="input-field" required>
+                    <option value="Private Celebration">Private Milestone Celebration</option>
+                    <option value="Corporate Entertaining">Executive Entertaining</option>
+                    <option value="Wine Masterclass">Cellar Tasting & Masterclass</option>
+                    <option value="Wedding Reception">Intimate Wedding Dinner</option>
+                    <option value="Full Buyout">Full Restaurant Buyout (34 Seats)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+                <div>
+                  <label class="form-label">Number of Guests</label>
+                  <input type="number" name="guest-count" min="6" max="34" value="12" class="input-field" required>
+                </div>
+                <div>
+                  <label class="form-label">Target Date</label>
+                  <input type="date" name="event-date" class="input-field" required value="2026-11-20">
+                </div>
+              </div>
+
+              <div style="margin-bottom: 1.25rem;">
+                <label class="form-label">Estimated Budget Expectation</label>
+                <select name="budget-range" class="input-field">
+                  <option value="Standard Salon (₹35,000 - ₹60,000)">Standard Salon (₹35,000 – ₹60,000)</option>
+                  <option value="Prestige Cellar (₹60,000 - ₹1,20,000)" selected>Prestige Cellar & Rare Pairings (₹60,000 – ₹1,20,000)</option>
+                  <option value="Grand Buyout (₹2,50,000+)">Grand Restaurant Buyout (₹2,50,000+)</option>
+                </select>
+              </div>
+
+              <div style="margin-bottom: 2rem;">
+                <label class="form-label">Specific Requirements / Bespoke Notes</label>
+                <textarea name="event-notes" placeholder="Audio-visual requirements, speech timing, bespoke dietary programs..." class="input-field" rows="4"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Transmit Salon Request</button>
+            </form>
+          </div>
+
+          <!-- Location & Direct Contacts -->
+          <div>
+            <div class="contact-card-box" style="margin-bottom: 2rem;">
+              <span class="eyebrow">Direct Contact & Arrival</span>
+              <h3 style="margin-bottom: 1.5rem;">Sanctuary Location</h3>
+
+              <div class="contact-info-grid">
+                <div>
+                  <div class="info-block-label">Address</div>
+                  <div class="info-block-val">
+                    L'ÉCRIN Restaurant<br>
+                    14 Albemarle Street<br>
+                    Mayfair, London W1S 4HP
+                  </div>
+                </div>
+
+                <div>
+                  <div class="info-block-label">Direct Line</div>
+                  <div class="info-block-val">
+                    Concierge: +44 20 7946 0912<br>
+                    Sommelier: +44 20 7946 0914<br>
+                    events@lecrin-restaurant.com
+                  </div>
+                </div>
+
+                <div>
+                  <div class="info-block-label">Valet & Transit</div>
+                  <div class="info-block-val">
+                    Complimentary Valet Parking at front portal.<br>
+                    Green Park Station (3 min walk).
+                  </div>
+                </div>
+
+                <div>
+                  <div class="info-block-label">Dress Etiquette</div>
+                  <div class="info-block-val">
+                    Elegant Smart Casual.<br>
+                    No athletic wear or flip-flops.
+                  </div>
+                </div>
+              </div>
+
+              <div style="background-color: var(--bg-tertiary); border: 1px solid var(--border-subtle); padding: 1.5rem;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Operating Hours</h4>
+                <div style="display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 0.35rem;">
+                  <span style="color: var(--text-secondary);">Tuesday – Saturday (Lunch)</span>
+                  <span style="font-family: var(--font-mono); color: var(--text-primary);">12:00 – 14:30</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 0.35rem;">
+                  <span style="color: var(--text-secondary);">Tuesday – Saturday (Dinner)</span>
+                  <span style="font-family: var(--font-mono); color: var(--text-primary);">17:30 – 23:00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.88rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.5rem; margin-top: 0.5rem;">
+                  <span>Sunday & Monday</span>
+                  <span style="font-family: var(--font-mono);">Kitchen Dark (Closed)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Discrete Map Frame Simulation -->
+            <div style="border: 1px solid var(--border-subtle); background-color: var(--bg-card); padding: 1.5rem; text-align: center;">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.15em; color: var(--accent-gold); text-transform: uppercase;">Mayfair Sanctuary Coordinate</span>
+              <p style="font-size: 1.1rem; color: var(--text-primary); margin: 0.5rem 0;">51°30'32.4"N 0°08'31.2"W</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Directly adjacent to The Royal Institution & Stafford Gardens</p>
+              <a href="https://maps.google.com/?q=14+Albemarle+Street+London" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size: 0.75rem; padding: 0.5rem 1rem;">Open in Maps →</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions Accordion -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading-wrap">
+          <span class="eyebrow">Guest Guidance</span>
+          <h2 class="section-heading-title">Frequently Answered Queries</h2>
+          <p class="section-heading-desc">Essential information regarding reservations, dietary adaptations, and cellar protocols.</p>
+        </div>
+
+        <div class="faq-accordion-wrap">
+          
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>How far in advance do table bookings release?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Table bookings open exactly 60 calendar days in advance at 09:00 GMT on the first day of each month. Due to our intimate 34-seat dining room, dinner seatings between 19:00 and 20:30 frequently book rapidly. Priority waitlists are maintained by our concierge.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Can severe allergies and dietary lifestyles be accommodated?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              With 48 hours advance notice, Chef Julian Mercier and our brigade prepare parallel bespoke iterations of the tasting journey for vegetarian, pescatarian, gluten-free, and dairy-free guests without compromising culinary rigor. We kindly ask that life-threatening allergies be noted upon initial reservation.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>What is the dress code for dining at L'ÉCRIN?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Our attire guideline is elegant smart casual. Jackets are encouraged for gentlemen, though not mandatory. We respectfully request that guests refrain from sportswear, athletic sneakers, and beach footwear.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>May we bring our own commemorative wine (Corkage Policy)?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              We permit up to one 750ml bottle of commemorative vintage wine per two guests, provided the specific vintage is not currently featured on our reserve cellar list. A corkage and stemware service fee of ₹1,200 per bottle applies.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>What is the cancellation and refund policy?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Reservations may be rescheduled or cancelled without penalty up to 48 hours prior to service. Cancellations occurring within 48 hours or unnotified non-arrivals incur a fee of ₹1,500 per guest to honor the morning procurement of perishable wild provisions.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Quick Reservation Modal -->
+  <div class="modal-backdrop" id="global-reserve-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-global-modal" aria-label="Close modal">×</button>
+      <span class="eyebrow">Priority Booking</span>
+      <h3 style="margin-bottom: 0.5rem;">Reserve Your Table at Selfwise Cafe</h3>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 2rem;">
+        Instant table availability for up to 8 guests.
+      </p>
+
+      <form id="quick-reserve-form">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <label class="form-label">Party Size</label>
+            <select name="quick-guests" class="input-field" required>
+              <option value="2" selected>2 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="8">8 Guests</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Date</label>
+            <input type="date" name="quick-date" class="input-field" required value="2026-10-15">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <label class="form-label">Seating Time</label>
+            <select name="quick-time" class="input-field" required>
+              <option value="17:30">17:30</option>
+              <option value="19:30" selected>19:30</option>
+              <option value="20:45">20:45</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Seating Preference</label>
+            <select name="quick-area" class="input-field">
+              <option value="Main Dining Room">Main Dining Room</option>
+              <option value="Chef Counter">Open Kitchen Counter</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <label class="form-label">Primary Guest Full Name</label>
+          <input type="text" name="quick-name" placeholder="Full Name" class="input-field" required>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <label class="form-label">Email for Confirmation</label>
+          <input type="email" name="quick-email" placeholder="name@domain.com" class="input-field" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <span class="brand-title" style="font-size: 1.4rem;">SELFWISE CAFE</span>
+          <p class="footer-brand-desc">
+            A minimalist sanctuary of artisanal roastery and modern gastronomie. Rooted in seasonal harmony and silent culinary mastery.
+          </p>
+          <span class="badge">Artisanal Distinction</span>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="menu.html" class="footer-link">The Menu</a></li>
+            <li><a href="story.html" class="footer-link">Our Story & Ethos</a></li>
+            <li><a href="reservations.html" class="footer-link">Table Reservations</a></li>
+            <li><a href="contact.html" class="footer-link">Private Dining & Salon</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Service Hours</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link"><strong>Tuesday – Saturday</strong></li>
+            <li class="footer-link">Lunch: 12:00 – 14:30</li>
+            <li class="footer-link">Dinner: 17:30 – 23:00</li>
+            <li class="footer-link" style="color: var(--text-muted); margin-top: 0.5rem;">Sunday & Monday: Closed</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Private Journal</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Receive seasonal menu announcements and priority access to cellar releases.
+          </p>
+          <form class="newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Your email address" class="newsletter-input" required>
+              <button type="submit" class="newsletter-btn">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 SELFWISE CAFE. ALL RIGHTS RESERVED.</div>
+        <div>14 ALBEMARLE STREET, MAYFAIR · TEL: +91 22 6946 0912</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

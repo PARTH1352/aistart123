@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SELFWISE CAFE — Artisanal Gastronomie & Roastery</title>
+  <meta name="description" content="Selfwise Cafe is a minimalist sanctuary of artisanal coffee roastery, culinary precision, and silent luxury.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" id="header-brand-logo">
+        <span class="brand-title">SELFWISE CAFE</span>
+        <span class="brand-subtitle">ARTISANAL GASTRONOMIE & ROASTERY</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="menu.html" class="nav-link">The Menu</a>
+        <a href="story.html" class="nav-link">Our Story</a>
+        <a href="reservations.html" class="nav-link">Reservations</a>
+        <a href="contact.html" class="nav-link">Private Dining & Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-reserve-nav" data-open-reserve-modal id="nav-reserve-btn">Reserve a Table</button>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">01 / Home</a>
+      <a href="menu.html" class="mobile-nav-link">02 / The Menu</a>
+      <a href="story.html" class="mobile-nav-link">03 / Our Story</a>
+      <a href="reservations.html" class="mobile-nav-link">04 / Reservations</a>
+      <a href="contact.html" class="mobile-nav-link">05 / Private Dining & Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-gold); margin-bottom: 0.5rem; font-weight: 700;">CONCIERGE & BOOKINGS</p>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">+91 22 6946 0912 · reservations@selfwisecafe.com</p>
+      <button class="btn btn-primary" style="width: 100%;" data-open-reserve-modal>Reserve Table</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Editorial Section -->
+    <section class="hero-editorial">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Minimalist Roastery & Fine Kitchen</span>
+          <h1 class="hero-title">Purity of Taste. Crafted in Silence.</h1>
+          <p class="hero-desc">
+            An uncompromising sanctuary of modern artisanal coffee, single-origin roastery, and contemporary culinary discipline.
+          </p>
+          <div class="hero-actions">
+            <a href="menu.html" class="btn btn-primary" id="hero-explore-menu-btn">Explore Tasting Menu</a>
+            <a href="reservations.html" class="btn btn-outline" id="hero-reservations-btn">Book Experience</a>
+          </div>
+          
+          <div class="hero-meta-strip">
+            <div class="meta-item">
+              <div class="meta-item-label">Tonight's Service</div>
+              <div class="meta-item-value">Dinner 17:30 – 23:00</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-item-label">Michelin Guide</div>
+              <div class="meta-item-value">Three Stars (2024–2026)</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-item-label">Location</div>
+              <div class="meta-item-value">14 Albemarle St, London</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-frame">
+          <img src="assets/images/hero.jpg" alt="Atmospheric main dining room of Selfwise Cafe illuminated by subtle candlelights">
+          <div class="hero-caption">
+            <div>
+              <div class="hero-caption-title">The Grand Dining Hall</div>
+              <div class="hero-caption-sub">Architectural Monolith & Dark Oak</div>
+            </div>
+            <span class="badge">Limited to 34 Seats</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accolades Bar -->
+    <div class="accolades-strip">
+      <div class="container accolades-grid">
+        <div class="accolade-item">
+          <div class="accolade-num">★★★</div>
+          <div class="accolade-label">Michelin Guide Distinction</div>
+        </div>
+        <div class="accolade-item">
+          <div class="accolade-num">#14</div>
+          <div class="accolade-label">The World's 50 Best Gastronomy</div>
+        </div>
+        <div class="accolade-item">
+          <div class="accolade-num">5 / 5</div>
+          <div class="accolade-label">Forbes Travel Guide Award</div>
+        </div>
+        <div class="accolade-item">
+          <div class="accolade-num">3,200</div>
+          <div class="accolade-label">Curated Micro-Lots & Reserve Vintages</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Culinary Pillars -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading-wrap">
+          <span class="eyebrow">Our Philosophy</span>
+          <h2 class="section-heading-title">Three Elements of Distinction</h2>
+          <p class="section-heading-desc">Every creation at Selfwise Cafe is conceived through the prism of restraint, hyper-local micro-seasonality, and obsessive craftsmanship.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <span class="pillar-number">01 / DISCIPLINE</span>
+            <h3 class="pillar-title">Radical Seasonality</h3>
+            <p class="pillar-text">
+              We harvest strictly within 48 hours of service. Our relationships with regenerative fishermen in Brittany and biodynamic foragers in Kent dictate our nightly culinary score.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-number">02 / CRAFTSMANSHIP</span>
+            <h3 class="pillar-title">Bincho-Tan & Ferments</h3>
+            <p class="pillar-text">
+              Ancient Kishu white charcoal embers impart pure smoky resonance without overpowering delicate natural proteins, married with vinegars aged in our cellar up to five years.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-number">03 / CELLAR</span>
+            <h3 class="pillar-title">Single-Terroir Vintages</h3>
+            <p class="pillar-text">
+              Head Sommelier Elena Vance works exclusively with low-intervention viticulturists who respect living soil, curating pairings that reveal the terroir of forgotten micro-parcels.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Dish Spotlight -->
+    <section class="section">
+      <div class="container">
+        <div class="chef-statement-block">
+          <div class="chef-statement-image">
+            <img src="assets/images/signature-dish.jpg" alt="A5 Miyazaki Wagyu medallion with pickled forest morels and leek ash">
+          </div>
+
+          <div>
+            <span class="eyebrow">Signature Course Spotlight</span>
+            <h2 style="margin-bottom: 1rem;">A5 Miyazaki Wagyu & Wild Morel Infusion</h2>
+            <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">
+              Dry-aged for forty-five days in salt-brick chambers, seared over Japanese bincho-tan coals, and rested in caramelized bone marrow jus with mountain morels foraged during early spring frost.
+            </p>
+            <div style="display: flex; gap: 2rem; margin-bottom: 2.5rem;">
+              <div>
+                <p style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-gold); text-transform: uppercase;">Provenance</p>
+                <p style="color: var(--text-primary); font-weight: 500;">Miyazaki Prefecture, Japan</p>
+              </div>
+              <div>
+                <p style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-gold); text-transform: uppercase;">Cellar Pairing</p>
+                <p style="color: var(--text-primary); font-weight: 500;">2016 Château Pontet-Canet</p>
+              </div>
+            </div>
+            <a href="menu.html" class="btn btn-outline">Explore Full Winter Menu →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chef's Statement Block -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="chef-statement-block" style="grid-template-columns: 1.1fr 0.9fr;">
+          <div>
+            <span class="eyebrow">The Culinary Director</span>
+            <blockquote class="chef-quote">
+              "True luxury is not excess or ornamentation. It is the absolute reverence for an ingredient brought to its purest, quietest perfection."
+            </blockquote>
+            <div class="chef-attribution">
+              <div class="chef-attribution-name">Julian Mercier</div>
+              <div class="chef-attribution-role">Chef Patron & Founder</div>
+            </div>
+            <div style="margin-top: 2rem;">
+              <a href="story.html" class="btn btn-subtle">Discover Our Heritage →</a>
+            </div>
+          </div>
+
+          <div class="chef-statement-image">
+            <img src="assets/images/chef-portrait.jpg" alt="Chef Julian Mercier in his minimalist kitchen">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Call to Action Banner -->
+    <section class="section">
+      <div class="container" style="text-align: center; max-width: 780px;">
+        <span class="eyebrow">Your Table Awaits</span>
+        <h2 style="margin-bottom: 1.25rem;">An Evening of Rare Culinary Art</h2>
+        <p style="margin-bottom: 2.5rem;">
+          Reservations open sixty days in advance on the first of each calendar month. We accommodate up to 34 guests per service to preserve intimacy and absolute attention to detail.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap;">
+          <a href="reservations.html" class="btn btn-primary">Book Winter Reservations</a>
+          <a href="contact.html" class="btn btn-outline">Private Dining Inquiries</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <span class="brand-title" style="font-size: 1.4rem;">SELFWISE CAFE</span>
+          <p class="footer-brand-desc">
+            A minimalist sanctuary of artisanal roastery and modern gastronomie. Rooted in seasonal harmony and silent culinary mastery.
+          </p>
+          <span class="badge">Artisanal Distinction</span>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="menu.html" class="footer-link">The Menu</a></li>
+            <li><a href="story.html" class="footer-link">Our Story & Ethos</a></li>
+            <li><a href="reservations.html" class="footer-link">Table Reservations</a></li>
+            <li><a href="contact.html" class="footer-link">Private Dining & Salon</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Service Hours</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link"><strong>Tuesday – Saturday</strong></li>
+            <li class="footer-link">Lunch: 12:00 – 14:30</li>
+            <li class="footer-link">Dinner: 17:30 – 23:00</li>
+            <li class="footer-link" style="color: var(--text-muted); margin-top: 0.5rem;">Sunday & Monday: Closed</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Private Journal</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Receive seasonal menu announcements and priority access to cellar releases.
+          </p>
+          <form class="newsletter-form" id="home-newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Your email address" class="newsletter-input" required>
+              <button type="submit" class="newsletter-btn">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 SELFWISE CAFE. ALL RIGHTS RESERVED.</div>
+        <div>14 ALBEMARLE STREET, MAYFAIR · TEL: +91 22 6946 0912</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Quick Reservation Modal -->
+  <div class="modal-backdrop" id="global-reserve-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-global-modal" aria-label="Close modal">×</button>
+      <span class="eyebrow">Priority Booking</span>
+      <h3 style="margin-bottom: 0.5rem;">Reserve Your Table at Selfwise Cafe</h3>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 2rem;">
+        Instant table availability for up to 8 guests. For private salons of 9+, visit our Private Dining concierge.
+      </p>
+
+      <form id="quick-reserve-form">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <label class="form-label">Party Size</label>
+            <select name="quick-guests" class="input-field" required>
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="8">8 Guests (Chef's Table)</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Date</label>
+            <input type="date" name="quick-date" class="input-field" required value="2026-10-15">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <label class="form-label">Seating Time</label>
+            <select name="quick-time" class="input-field" required>
+              <option value="17:30">17:30 (Dinner Opening)</option>
+              <option value="18:15">18:15</option>
+              <option value="19:30" selected>19:30 (Prime Evening)</option>
+              <option value="20:45">20:45</option>
+              <option value="21:15">21:15</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Seating Preference</label>
+            <select name="quick-area" class="input-field">
+              <option value="Main Dining Room">Main Dining Room</option>
+              <option value="Chef Counter">Open Kitchen Counter</option>
+              <option value="The Garden Alcove">The Garden Alcove</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <label class="form-label">Primary Guest Full Name</label>
+          <input type="text" name="quick-name" placeholder="e.g. Lord Alistair Vance" class="input-field" required>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <label class="form-label">Email for Confirmation</label>
+          <input type="email" name="quick-email" placeholder="name@domain.com" class="input-field" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Immediate Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
